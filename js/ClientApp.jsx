@@ -1,6 +1,9 @@
+import React from 'react';
+import { render } from 'react-dom';
+
 const ce = React.createElement;
 
-const MyTitle = function(props) {
+const MyTitle = function MyTitle(props) {
   return ce('div', null, ce('h1', { style: { color: props.color } }, props.title));
 };
 
@@ -11,7 +14,7 @@ const MyFirstComponent = function() {
     ce(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
     ce(MyTitle, { title: 'Stranger Things', color: 'GreenYellow' }),
     ce(MyTitle, { title: 'Ricky and Morty', color: 'LimeGreen' }),
-    ce(MyTitle, { title: 'Silicon Valley', color: 'peru' })
+    ce(MyTitle, { title: 'Twin Peaks', color: 'peru' })
   );
 };
 
